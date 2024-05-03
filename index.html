@@ -60,10 +60,10 @@
 
 <body>
 
-	<p id="exponent"></p>
-	<p id="product"></p>
 	<p id="remainder"></p>
 	<p id="equal"></p>
+	<p id="exponent"></p>
+	<p id="product"></p>
 
 
 <div class="d-flex">
@@ -121,6 +121,13 @@
             }
         }
 
+	function exponent() {
+            let x = parseFloat(document.getElementById('x').value);
+            let y = parseFloat(document.getElementById('y').value); 
+            //according to w3schools, parsefloat parses a value as a string and returns the first number
+            alert(x + " raised to " + y + " is " + (x ** y));
+        }
+
         function product() {
             let x = parseFloat(document.getElementById('x').value); 
             let y = parseFloat(document.getElementById('y').value);
@@ -128,13 +135,6 @@
             alert(x + " times " + y + " is " + (x * y));
         }
 
-
-	    function exponent() {
-            let x = parseFloat(document.getElementById('x').value);
-            let y = parseFloat(document.getElementById('y').value); 
-            //according to w3schools, parsefloat parses a value as a string and returns the first number
-            alert(x + " raised to " + y + " is " + (x ** y));
-        }
     </script>
 
 
